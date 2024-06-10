@@ -1,0 +1,29 @@
+/* styles.css */
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #ddd; /* Add a border around the table */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the table header */
+  th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: #307bb0; /* Add a background color to the table header */
+  }
+  
+  /* Style the table cells */
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  /* Change the background color of every other row */
+  /* tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+   */

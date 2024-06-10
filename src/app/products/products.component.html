@@ -1,0 +1,31 @@
+<h2 style="color: aliceblue;align-self: center;">Products</h2>
+
+<div  style="color: aliceblue;">
+   <table>
+    <thead>
+        <th>PID</th>
+        <th>Name</th>
+        <th>price</th>
+        <th *ngIf="isAdmin">Edit</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of responseData">
+            <td>
+                {{product.pid}}
+            </td>
+            <td>
+                {{product.name}}
+            </td>
+            <td>
+                {{product.price}}
+            </td>
+            <td *ngIf="isAdmin">
+                <button >Edit</button>
+            </td>
+        </tr>
+    </tbody>
+   </table>
+</div>
+<div>
+    <!-- <router-outlet></router-outlet> -->
+</div>

@@ -16,7 +16,7 @@ export class AuthSeviceService {
   return this.http.get<any>(`${this.appUrl}/user/getUsers`);
  }
 
- loginData(credentials:{username:string,password:string}):Observable<any>{
+ loginData(credentials:{email:string,password:string}):Observable<any>{
   return this.http.post<any>(`${this.appUrl}/user/signin`,credentials, { withCredentials: true })
  }
   
